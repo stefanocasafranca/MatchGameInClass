@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4979889C2CAEF8B7004113AF /* MatchGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4979889B2CAEF8B7004113AF /* MatchGame.swift */; };
 		49C93FA82CAC4C1500D324C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C93FA72CAC4C1500D324C9 /* AppDelegate.swift */; };
 		49C93FAA2CAC4C1500D324C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C93FA92CAC4C1500D324C9 /* SceneDelegate.swift */; };
 		49C93FAC2CAC4C1500D324C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C93FAB2CAC4C1500D324C9 /* ViewController.swift */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		497988982CAEDEE0004113AF /* MatchGame.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = MatchGame.playground; path = ../MatchGame.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		4979889B2CAEF8B7004113AF /* MatchGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchGame.swift; sourceTree = "<group>"; };
 		49C93FA42CAC4C1500D324C9 /* MatchGameInClass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatchGameInClass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49C93FA72CAC4C1500D324C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49C93FA92CAC4C1500D324C9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				49C93FA72CAC4C1500D324C9 /* AppDelegate.swift */,
+				4979889B2CAEF8B7004113AF /* MatchGame.swift */,
 				49C93FA92CAC4C1500D324C9 /* SceneDelegate.swift */,
 				49C93FAB2CAC4C1500D324C9 /* ViewController.swift */,
 				49C93FAD2CAC4C1500D324C9 /* Main.storyboard */,
@@ -261,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				49C93FAC2CAC4C1500D324C9 /* ViewController.swift in Sources */,
+				4979889C2CAEF8B7004113AF /* MatchGame.swift in Sources */,
 				49C93FA82CAC4C1500D324C9 /* AppDelegate.swift in Sources */,
 				49C93FAA2CAC4C1500D324C9 /* SceneDelegate.swift in Sources */,
 			);

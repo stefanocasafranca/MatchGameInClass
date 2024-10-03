@@ -8,12 +8,32 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet var cardButtons: [UIButton]!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        showCardsButtons()
     }
-
+        func showCardsButtons(){
+            for tag in 0..<game.cards.count{
+           
+                if game.cards[tag].cellState == .Hidden {
+                    cardButtons[tag].setImage(UIImage(named: "question-mark"), for: .normal)
+                } else{
+                    let name = game.cards[tag].name
+                    cardButtons[tag].setImage(UIImage(named: name), for: .normal)
+                }
+                
+               
+            }
+        }
+    
+    @IBAction func pressedCardButton(_ sender: UIButton){
+        game.processSelection(at: sender.tag)
+        showCardsButtons()
+    }
 
 }
 
