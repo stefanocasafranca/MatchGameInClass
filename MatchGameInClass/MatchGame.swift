@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import UIKit
 
 enum CellState {
     case Hidden
@@ -31,7 +30,8 @@ struct MatchGame{
     var firstCardSelection = 0
     var secondCardSelection = 0
     
-    var cards = [Card(name: "canserbero-logo"), Card(name: "dobleV-logo"),Card(name: "lil-supa-logo"),Card(name: "rapper-school-logo"),Card(name: "akapellah-logo"),Card(name: "eminem-logo"),Card(name: "apache-logo"),Card(name: "eladio-logo"), Card(name: "canserbero-logo"), Card(name: "dobleV-logo"),Card(name: "lil-supa-logo"),Card(name: "rapper-school-logo"),Card(name: "akapellah-logo"),Card(name: "eminem-logo"),Card(name: "apache-logo"),Card(name: "eladio-logo")]
+    var cards = [Card(name: "canserbero-logo"), Card(name: "dobleV-logo"),Card(name: "lil-supa-logo"),Card(name: "rapper-school-logo"),Card(name: "akapellah-logo"),Card(name: "eminem-logo"),Card(name: "apache-logo"),Card(name: "eladio-logo"), Card(name: "canserbero-logo"), Card(name: "dobleV-logo"),Card(name: "lil-supa-logo"),Card(name: "rapper-school-logo"),Card(name: "akapellah-logo"),Card(name: "eminem-logo"),Card(name: "apache-logo"),Card(name: "eladio-logo")
+    ]
     
     var state: GameState = .Hidden
     
@@ -56,7 +56,7 @@ struct MatchGame{
         
         let card = cards[tag]
         switch state  {
-
+            
             // When all cards are hidden or guessed
             
         case .Hidden :
@@ -65,7 +65,7 @@ struct MatchGame{
                 cards[tag] . cellState = .Displayed
                 firstCardSelection = tag
                 state = .FirstCardSelected
-            case .Guessed, .Displayed: print("Error")
+            case .Guessed, .Displayed: print("Mijo")
             }
             
             // After the first card has been selected
@@ -73,38 +73,37 @@ struct MatchGame{
             switch card.cellState{
             case .Hidden:
                 cards[tag] . cellState = .Displayed
-                firstCardSelection = tag
-                if cards [firstCardSelection].name ==
-                    cards[secondCardSelection].name {
-                
+                secondCardSelection = tag
+                if cards [firstCardSelection].name == cards[secondCardSelection].name
+                    {
                     //both cards matched
-                    cards [ firstCardSelection].cellState = .Guessed
+                    cards[firstCardSelection].cellState = .Guessed
                     cards[secondCardSelection].cellState = .Guessed
                     state = .Hidden
                 } else  {
                     // Cards don't match, switch to "CheckMatches" state
-
+                    
                     state = .CheckMatches
                 }
-            case.Guessed,.Displayed:
-                print("Error")
+            case .Guessed,.Displayed:
+                print("Cuek")
                 
             }
             
             // If the two cards selected don't match
-
+            
         case .CheckMatches:
             cards[firstCardSelection].cellState = .Hidden
             cards[secondCardSelection].cellState = .Hidden
             state = .Hidden
         }
-        
+    }
         
         func display(){
             print(cards)
             
         }
     }
-}
+
     
   var game = MatchGame()
