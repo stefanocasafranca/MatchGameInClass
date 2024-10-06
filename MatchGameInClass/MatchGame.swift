@@ -44,7 +44,7 @@ struct MatchGame{
     
     mutating func selectedCardAt (tag:Int){
         if tag < 0 || tag >= cards.count || cards[tag].cellState != .Displayed {
-            print("Error, button is out of range")
+            print("Error, button is out of range. Try Again")
             return
         }
         cards[tag].cellState = .Displayed
