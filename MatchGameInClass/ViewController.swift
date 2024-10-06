@@ -22,36 +22,25 @@ class ViewController: UIViewController {
         game.newGame()
         showCardsButtons()
     }
+    
     func showCardsButtons(){
         for tag in 0..<game.cards.count{
             
             if game.cards[tag].cellState == .Hidden {
                 cardButtons[tag].setImage(UIImage(named: "question-mark"), for: .normal)
-            } else{
+            } else {
                 let name = game.cards[tag].name
                 cardButtons[tag].setImage(UIImage(named: name), for: .normal)
             }
-            
-            
         }
     }
     
     @IBAction func pressedCardButton(_ sender: UIButton){
         game.processSelection(at: sender.tag)
-        /*if game.state == .CheckMatches {
-            // Show the current state of the cards
-            showCardsButtons()
-            
-            // After a delay, hide the unmatched cards and update the UI
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-                self.game.processSelection(at: sender.tag)  // Hides the cards
-                self.showCardsButtons()  // Update the UI after hiding
-            }
-        } else {
-            // If it's not checking for matches, update the UI immediately*/
-            showCardsButtons()
-        }
         
+            showCardsButtons()
     }
+        
+}
     
-//}
+

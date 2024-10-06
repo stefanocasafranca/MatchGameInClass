@@ -22,6 +22,7 @@ struct Card {
 enum GameState{
     case Hidden
     case FirstCardSelected
+    //case SecondCardSelected
     case CheckMatches
 }
 
@@ -29,6 +30,7 @@ struct MatchGame{
     
     var firstCardSelection = 0
     var secondCardSelection = 0
+    //var thirdCardSelection = 0
     
     var cards = [Card(name: "canserbero-logo"), Card(name: "dobleV-logo"),Card(name: "lil-supa-logo"),Card(name: "rapper-school-logo"),Card(name: "akapellah-logo"),Card(name: "eminem-logo"),Card(name: "apache-logo"),Card(name: "eladio-logo"), Card(name: "canserbero-logo"), Card(name: "dobleV-logo"),Card(name: "lil-supa-logo"),Card(name: "rapper-school-logo"),Card(name: "akapellah-logo"),Card(name: "eminem-logo"),Card(name: "apache-logo"),Card(name: "eladio-logo")
     ]
@@ -55,17 +57,18 @@ struct MatchGame{
     mutating func processSelection(at tag: Int) {
         
         let card = cards[tag]
+        
+        // When all cards are hidden or guessed
         switch state  {
-            
-            // When all cards are hidden or guessed
-            
+
         case .Hidden :
             switch card.cellState{
             case . Hidden:
                 cards[tag] . cellState = .Displayed
                 firstCardSelection = tag
                 state = .FirstCardSelected
-            case .Guessed, .Displayed: print("Mijo")
+            case .Guessed, .Displayed:
+                print("Card Already Selected")
             }
             
             // After the first card has been selected
@@ -74,11 +77,25 @@ struct MatchGame{
             case .Hidden:
                 cards[tag] . cellState = .Displayed
                 secondCardSelection = tag
-                if cards [firstCardSelection].name == cards[secondCardSelection].name
+               //state = .secondCardSelected
+               //case .Guessed, .Displayed:
+                //print("2nd Card Already Selected")*/
+                
+                
+           // case .SecondCardSelected:
+                /*switch card.cellState{
+                 case .Hidden:
+                     cards[tag] . cellState = .Displayed
+                     thirdCardSelection = tag*/
+                               
+                //DO THIS IF BUT FOR THE 3 CARDS
+                                
+                if cards [firstCardSelection].name == cards[secondCardSelection].name //&& cards [firstCardSelection].name == cards[thirdCardSelection].name
                     {
-                    //both cards matched
+                    //three cards matched
                     cards[firstCardSelection].cellState = .Guessed
                     cards[secondCardSelection].cellState = .Guessed
+                //cards[thirdCardSelection].cell.State = .Guessed
                     state = .Hidden
                 } else  {
                     // Cards don't match, switch to "CheckMatches" state
@@ -90,11 +107,12 @@ struct MatchGame{
                 
             }
             
-            // If the two cards selected don't match
+            // If the three cards selected don't match
             
         case .CheckMatches:
             cards[firstCardSelection].cellState = .Hidden
             cards[secondCardSelection].cellState = .Hidden
+        //  cards[thirdCardSelection].cellState = .Hidden
             state = .Hidden
         }
     }
