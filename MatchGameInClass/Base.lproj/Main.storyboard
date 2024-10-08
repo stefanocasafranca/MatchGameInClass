@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="t63-5V-yDp">
-                                <rect key="frame" x="45" y="139" width="303" height="300"/>
+                                <rect key="frame" x="45" y="139" width="303" height="460"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="dt9-2N-243">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="60"/>
@@ -247,6 +247,111 @@
                                             </button>
                                         </subviews>
                                     </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="OLB-vt-YQM">
+                                        <rect key="frame" x="0.0" y="320" width="300" height="60"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zh4-0E-CxZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="KgO-ig-ge9"/>
+                                                    <constraint firstAttribute="width" constant="60" id="wdd-I3-i5i"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="dobleV-logo"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DIf-cN-ZyJ">
+                                                <rect key="frame" x="80" y="0.0" width="60" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="8Y5-5h-t5U"/>
+                                                    <constraint firstAttribute="width" constant="60" id="Z4C-Zc-dqh"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="dobleV-logo"/>
+                                                <connections>
+                                                    <action selector="pressedCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8mm-JI-dFE"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qjn-Yl-qUx">
+                                                <rect key="frame" x="160" y="0.0" width="60" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="1K8-Bb-Z8U"/>
+                                                    <constraint firstAttribute="width" constant="60" id="lYw-bV-lye"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="dobleV-logo"/>
+                                                <connections>
+                                                    <action selector="pressedCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9fp-YU-2Tg"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ao4-qO-ZHZ">
+                                                <rect key="frame" x="240" y="0.0" width="60" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="60" id="U6Y-qE-zFt"/>
+                                                    <constraint firstAttribute="height" constant="60" id="bZt-RV-DSj"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="dobleV-logo"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="B9I-im-fNG">
+                                        <rect key="frame" x="0.0" y="400" width="300" height="60"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Yc-pF-EUp">
+                                                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="Act-ej-CKN"/>
+                                                    <constraint firstAttribute="width" constant="60" id="cS2-LI-3Pa"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="dobleV-logo"/>
+                                                <connections>
+                                                    <action selector="pressedCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ev6-cl-KVR"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U0G-aK-Lxd">
+                                                <rect key="frame" x="80" y="0.0" width="60" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="60" id="SaO-Gm-3kY"/>
+                                                    <constraint firstAttribute="height" constant="60" id="foW-qb-rWa"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="dobleV-logo"/>
+                                                <connections>
+                                                    <action selector="pressedCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cmy-5d-lAO"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kul-2T-u30">
+                                                <rect key="frame" x="160" y="0.0" width="60" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="60" id="7oV-Dg-rnx"/>
+                                                    <constraint firstAttribute="height" constant="60" id="HuD-io-abo"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="dobleV-logo"/>
+                                                <connections>
+                                                    <action selector="pressedCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="78z-ve-WpH"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJP-GJ-758">
+                                                <rect key="frame" x="240" y="0.0" width="60" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="BQw-gn-Nvh"/>
+                                                    <constraint firstAttribute="width" constant="60" id="WsT-Jy-EqN"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="dobleV-logo"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -275,6 +380,13 @@
                         <outletCollection property="cardButtons" destination="8Lq-IB-nT6" collectionClass="NSMutableArray" id="wcp-ab-0Nd"/>
                         <outletCollection property="cardButtons" destination="a2v-AX-SCm" collectionClass="NSMutableArray" id="HEa-c9-7sy"/>
                         <outletCollection property="cardButtons" destination="G5I-Vj-c1e" collectionClass="NSMutableArray" id="CBT-5p-kC2"/>
+                        <outletCollection property="cardButtons" destination="DIf-cN-ZyJ" collectionClass="NSMutableArray" id="P0I-Ms-8db"/>
+                        <outletCollection property="cardButtons" destination="Qjn-Yl-qUx" collectionClass="NSMutableArray" id="Wqk-yE-HZv"/>
+                        <outletCollection property="cardButtons" destination="8Yc-pF-EUp" collectionClass="NSMutableArray" id="Pnw-4p-T1v"/>
+                        <outletCollection property="cardButtons" destination="8Yc-pF-EUp" collectionClass="NSMutableArray" id="mPH-dn-VUX"/>
+                        <outletCollection property="cardButtons" destination="U0G-aK-Lxd" collectionClass="NSMutableArray" id="ArZ-Xn-t8D"/>
+                        <outletCollection property="cardButtons" destination="Kul-2T-u30" collectionClass="NSMutableArray" id="MXL-al-6cb"/>
+                        <outletCollection property="cardButtons" destination="Zh4-0E-CxZ" collectionClass="NSMutableArray" id="VuO-iL-iDi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
